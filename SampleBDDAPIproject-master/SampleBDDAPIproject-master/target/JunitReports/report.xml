@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="5.107">
+    <testcase classname="Pet store Post scenarios" name="Place an order for a pet with valid input data" time="3.052">
+        <system-out><![CDATA[Given placing a valid pet order.............................................passed
+When User calls PostPetOrderAPI with "/store/order" post HTTP method........passed
+Then validate the API status code 200.......................................passed
+And validate the "POST" response message....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Pet store Post scenarios" name="Retrive Get pet order with valid input data" time="0.622">
+        <system-out><![CDATA[Given get a pet order ID....................................................passed
+When User calls GetPetOrderAPI "/store/order/" with valid order ID..........passed
+Then validate the Get API status code 200...................................passed
+And validate the "GET" response message.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Pet store Post scenarios" name="Retrive Get pet order with invalid input data" time="0.637">
+        <system-out><![CDATA[Given get a pet order ID....................................................passed
+When User calls GetPetOrderAPI "/store/order/" with invalid order ID........passed
+Then validate the Get API status code 404...................................passed
+And validate the "GET" response message.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Pet store Post scenarios" name="Place an order for a pet with invalid input data" time="0.616">
+        <system-out><![CDATA[Given placing a invalid pet order...........................................passed
+When User calls PostPetOrderAPI with "/store/order" post HTTP method........passed
+Then validate the API status code 400.......................................passed
+And validate the "POST" response message....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
